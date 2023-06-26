@@ -67,8 +67,22 @@
                     <view key="view" contentMode="scaleToFill" id="0ke-cH-cYu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQc-Cy-hpm">
+                                <rect key="frame" x="124" y="408.66666666666669" width="145" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go to next page"/>
+                                <connections>
+                                    <action selector="btnNextPage:" destination="vjG-ez-rBa" eventType="touchUpInside" id="RBq-oX-5ow"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="l0W-Ft-OFn"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="IQc-Cy-hpm" firstAttribute="centerY" secondItem="0ke-cH-cYu" secondAttribute="centerY" id="2ub-zp-4g0"/>
+                            <constraint firstItem="IQc-Cy-hpm" firstAttribute="centerX" secondItem="0ke-cH-cYu" secondAttribute="centerX" id="EvX-K7-Sie"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H4N-H9-tXu">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="lPq-yl-kqK"/>
@@ -77,6 +91,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPV-HO-gb4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="58.778625954198468" y="1486.6197183098593"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="uC9-Vs-Bgr">
+            <objects>
+                <viewController storyboardIdentifier="ThirdViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="E55-DU-Ivw" customClass="ThirdViewController" customModule="TabBar___Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MCz-84-5Ex">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YAh-MK-qbu"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BMn-u8-p32" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="59" y="2180"/>
         </scene>
         <!--3rd-->
         <scene sceneID="oYu-LR-FHT">
@@ -144,6 +173,12 @@
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -166,6 +201,9 @@
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
